@@ -68,7 +68,7 @@ public class TestCases {
             gmail.deleteMail("NonExistentMessage");
             assertEquals(1, gmail.getInboxSize()); // Inbox size should remain unchanged
 
-        } catch (ParseException e) {
+        } catch (ParseException e){
             e.printStackTrace();
         }
     }
