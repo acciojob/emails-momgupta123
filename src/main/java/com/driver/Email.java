@@ -27,7 +27,7 @@ public class Email {
         // 5. It contains at least one special character. Any character apart from alphabets and digits is a special character
 
         // Check if the oldPassword matches the current password
-        if (oldPassword.equals(password)) {
+        if (oldPassword.equals(password)){
             // Check if the newPassword meets all the conditions
             if (newPassword.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$")) {
                 this.password = newPassword;
